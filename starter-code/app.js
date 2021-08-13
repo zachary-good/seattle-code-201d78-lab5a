@@ -51,7 +51,8 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function sumAndMultiply(a, b, c) { //eslint-disable-line
-
+// you get back an array from sum!!!
+// make sure your get the correct index number to get the number from sum
 }
 
 // Here is the test for sumAndMultiply(); uncomment it to run it
