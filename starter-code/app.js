@@ -16,7 +16,7 @@ function sum(a, b) { //eslint-disable-line
 }
 
 // Here is the test for sum(); uncomment it to run it
-//testSum(4, 7);
+testSum(4, 7);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
@@ -38,7 +38,7 @@ function multiply(a, b) { //eslint-disable-line
 }
 
 // Here is the test for multiply(); uncomment it to run it
-//testMultiply(5,9);
+testMultiply(5,9);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
@@ -55,31 +55,31 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function sumAndMultiply(a, b, c) { //eslint-disable-line
-// you get back an array from sum!!!
-// make sure your get the correct index number to get the number from sum
-//let numbers = [a, b];
-let sum1 = sum(a, b);
-let sumProb3 = sum(sum1[0], c);
-//console.log(sumProb3);
+  // you get back an array from sum!!!
+  // make sure your get the correct index number to get the number from sum
+  //let numbers = [a, b];
+  let sum1 = sum(a, b);
+  let sumProb3 = sum(sum1[0], c);
+  //console.log(sumProb3);
 
-let product3 = multiply(a, b);
-let product3a = multiply(product3[0], c);
-//console.log(product3a);
+  let product3 = multiply(a, b);
+  let product3a = multiply(product3[0], c);
+  //console.log(product3a);
 
-let sumString = a + ' and ' + b + ' and ' + c + ' sum to ' + sumProb3[0] + '.';
-//console.log(sumString);
+  let sumString = a + ' and ' + b + ' and ' + c + ' sum to ' + sumProb3[0] + '.';
+  //console.log(sumString);
 
-let productString = 'The product of ' + a + ' and ' + b + ' and ' + c + ' is ' + product3a[0] + '.';
-//console.log(productString);
+  let productString = 'The product of ' + a + ' and ' + b + ' and ' + c + ' is ' + product3a[0] + '.';
+  //console.log(productString);
 
-return[sumProb3[0], product3a[0], sumString, productString];
+  return[sumProb3[0], product3a[0], sumString, productString];
 
 }
 
 //let answers = sumAndMultiply(4,7,5);
 //console.log(answers);
 // Here is the test for sumAndMultiply(); uncomment it to run it
-//testSumAndMultiply(4,7,5);
+testSumAndMultiply(4,7,5);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
@@ -101,7 +101,7 @@ function sumArray(sumArr) { //eslint-disable-line
   let sumProb4a = sum(sumArr[0], sumArr[1]);
   let sumProb4b = sum(sumProb4a[0], sumArr[2]);
 
-  let prob4String = sumArr[0] + ',' + sumArr[1] + ',' + sumArr[2] + ' was passed in as an array of numbers, and ' + sumProb4b[0] + ' is their sum.'
+  let prob4String = sumArr[0] + ',' + sumArr[1] + ',' + sumArr[2] + ' was passed in as an array of numbers, and ' + sumProb4b[0] + ' is their sum.';
 
   return[sumProb4b[0], prob4String];
 
@@ -124,13 +124,21 @@ IMPORTANT DETAIL: You may not use the arithmetic operator * in this function. To
 
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testMultiplyArray() function and see if the test passes.*/
 
+let answer5 = multiplyArray(testArray);
+
 // Write your code here
 function multiplyArray(multArr) { //eslint-disable-line
+  let product5a = multiply(multArr[0], multArr[1]);
+  let product5b = multiply(product5a[0],multArr[2]);
+  
+  let prob5String = 'The numbers ' + multArr[0] + ',' + multArr[1] + ',' + multArr[2] + ' have a product of ' + product5b[0] + '.';
 
+
+  return[product5b[0], prob5String];
 }
 
 // Here is the test for multiplyArray(); uncomment it to run it
-// testMultiplyArray(testArray);
+testMultiplyArray(testArray);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. 
 
